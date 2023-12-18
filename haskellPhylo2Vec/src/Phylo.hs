@@ -3,7 +3,7 @@
 
 module Phylo(targets, joiners, duplicateAt, naiveToVec,
     naiveToVec', phylovecdomain, insertAt, naiveToTree, vecToTree,
-    roundTripNaiveVec, roundTripTreeVec, PhyloVec(..), treeToVec, vecToNaive,
+    roundTripNaiveVec, roundTripTreeVec, roundTripVecTree, PhyloVec(..), treeToVec, vecToNaive,
     treeToNaive, treeToNaiveValid, Tree(..), (/\), findAllCherries, joinCherry,
     defaultTreeEq, NaiveVec(..), Tree'(..), treeInternalNodes, roundTripVecNaive, genTree) where
 

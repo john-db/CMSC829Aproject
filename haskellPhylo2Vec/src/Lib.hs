@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( roundTripTreeVec, roundTripVecTree
     ) where
-
+import Phylo
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
