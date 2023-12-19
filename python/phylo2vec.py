@@ -7,14 +7,11 @@ def targets(v):
         return [0]
     if v[i] < i:
         ret = [v[i]] + targets(v[:-1])
-        #print('step ' + str(i) + ": " + str(ret))
         return ret
     else:
         waits = v[i] - i + 1 
         temp = targets(v[:-1])
-        #print("temp:" + str(temp))
         target = temp[waits-1]
-        #print("step " + str(i) + ": " + str(temp[0:waits-1] + [target] + temp[waits-1:]))
         return (temp[0:waits-1] + [target] + temp[waits-1:])
 
 def joiners(v):
