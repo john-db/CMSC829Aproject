@@ -11,8 +11,7 @@ def targets(v):
     else:
         waits = v[i] - i + 1 
         temp = targets(v[:-1])
-        target = temp[waits-1]
-        return (temp[0:waits-1] + [target] + temp[waits-1:])
+        return (temp[0:waits-1] + [temp[waits-1]] + temp[waits-1:])
 
 def joiners(v):
     i = len(v) - 1 
