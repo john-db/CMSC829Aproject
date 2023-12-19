@@ -1,0 +1,3 @@
+phylo2vec.py contains the functions for converting between the different vector and newick strings.
+medians.py generates the set of median trees
+run.py runs the analysis using trees.txt
